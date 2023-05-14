@@ -5,6 +5,6 @@ button {
     margin-top: 0.5em;
 }
 
-p {
+p.status_label {
     margin: 0;
 }
