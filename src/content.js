@@ -99,7 +99,7 @@ function addTextToHeaderTitle() {
 }
 
 async function initializeContentScript() {
-	addTextToHeaderTitle();
+	//addTextToHeaderTitle();
 	await addButtonToDivs();
     // Watch for new divs being added (due to pagination)
     var observer = new MutationObserver(function(mutations) {
