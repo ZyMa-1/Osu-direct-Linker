@@ -1,18 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Osu!direct Linker",
-  "version": "0.1",
-  "action": {
-	"default_popup": "popup.html"
-  },
+  "version": "0.2",
   "description": "Adds an osu!direct link button in beatmap search page",
   "permissions": [
-    "activeTab",
-	"storage"
+    "activeTab"
   ],
   "content_scripts": [{
     "matches": ["https://osu.ppy.sh/beatmapsets",
-				"https://osu.ppy.sh/beatmapsets?*"],
-    "js": ["content.js"]
-  }]
+				"https://osu.ppy.sh/beatmapsets?*",
+				"https://osu.ppy.sh/users*"],
+	"js": ["content.js"]}
+  ]
 }
